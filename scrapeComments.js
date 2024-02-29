@@ -12,6 +12,7 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 async function fetchAndWriteComments(levelID, count, page, mode) {
 
+    // you can replace http://localhost:2000 with https://gdbrowser.com but not recommended
     const url = `http://localhost:2000/api/comments/${levelID}?count=${count}&page=${page}&${mode}`;
 
     try {
