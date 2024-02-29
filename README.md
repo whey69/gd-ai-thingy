@@ -11,11 +11,20 @@ run `git clone https://github.com/whey69/gd-ai-thingy.git` in a folder, it shoul
 or just download the repository as zip and unpack it wherever you want
 
 #### step 2.
+install nodejs if you dont have that
+
+then clone [this repository](https://github.com/GDColon/GDBrowser) and install it locally (if needed follow the instructions of that project's readme)
+
+once gdbrowser is running in the background run `node scrapeComments.js` and it should start saving comments in a txt file
+
+#### step 3.
 open `text_generation.ipynb` with either google colab or vs code (i recommend the former)
+
+also upload the txt file from step 2 to /gdpt/ on your google drive (if using google colab)
 
 run everything, if needed follow instructions in the notebook
 
-#### step 3.
+#### step 4.
 once you have the model unzip it into a folder (with the same name) in the directory with the repository
 
 it should look something like this:
@@ -28,7 +37,7 @@ it should look something like this:
   ... (other files)
 ```
 
-#### step 4.
+#### step 5.
 were almost there, before running the ai we need to create a config
 
 open config.json in a prefered text editor and change the values as needed
@@ -42,7 +51,7 @@ gdAccountName: username of the account
 gdAccountPassword: password of the account, dont worry its not getting send anywhere (except robtops servers)
 ```
 
-#### step 5.
+#### step 6.
 the last step is to install python and/or tensorflow
 
 open up command terminal and run `python -m pip install tensorflow`
