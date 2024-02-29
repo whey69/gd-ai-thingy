@@ -1,5 +1,6 @@
 # gd-ai-thingy
 code i used to make the yourtetaq/yourthetaq accounts in gd
+
 also the code isnt very tested so be aware of that
 
 ## setup/usage
